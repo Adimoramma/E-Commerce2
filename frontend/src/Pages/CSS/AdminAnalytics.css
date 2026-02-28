@@ -1,0 +1,120 @@
+.admin-analytics {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.admin-analytics h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #333;
+}
+
+.period-selector {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.period-selector label {
+  font-size: 14px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.period-selector select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.analytics-section {
+  background: white;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.analytics-section h2 {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-size: 20px;
+  border-bottom: 2px solid #ff9f43;
+  padding-bottom: 10px;
+}
+
+.sales-chart,
+.revenue-chart {
+  overflow-x: auto;
+}
+
+.sales-chart table,
+.revenue-chart table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sales-chart thead,
+.revenue-chart thead {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.sales-chart th,
+.revenue-chart th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.sales-chart td,
+.revenue-chart td {
+  padding: 12px;
+  border-bottom: 1px solid #dee2e6;
+  font-size: 14px;
+  color: #666;
+}
+
+.sales-chart tbody tr:hover,
+.revenue-chart tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.sales-chart tbody tr:nth-child(odd),
+.revenue-chart tbody tr:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+.sales-chart p,
+.revenue-chart p {
+  text-align: center;
+  padding: 30px;
+  color: #999;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .analytics-section {
+    padding: 15px;
+  }
+
+  .sales-chart table,
+  .revenue-chart table {
+    font-size: 12px;
+  }
+
+  .sales-chart th,
+  .revenue-chart th,
+  .sales-chart td,
+  .revenue-chart td {
+    padding: 8px;
+  }
+}

@@ -1,0 +1,225 @@
+.admin-orders {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.admin-orders h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #333;
+}
+
+.filter-section {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.filter-section select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.order-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.order-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+  cursor: pointer;
+  transition: background 0.3s;
+  align-items: center;
+}
+
+.order-header:hover {
+  background: #f0f0f0;
+}
+
+.order-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.order-id {
+  font-weight: 600;
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 5px !important;
+}
+
+.order-date {
+  font-size: 12px;
+  color: #999;
+}
+
+.order-status {
+  text-align: right;
+}
+
+.order-status .status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.order-status .status-badge.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.order-status .status-badge.confirmed {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.order-status .status-badge.shipped {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.order-status .status-badge.delivered {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.order-status .status-badge.cancelled {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.order-total {
+  font-weight: 600;
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+
+.order-details {
+  padding: 20px;
+  background: white;
+  border-top: 1px solid #e0e0e0;
+}
+
+.details-section {
+  margin-bottom: 20px;
+}
+
+.details-section:last-child {
+  margin-bottom: 0;
+}
+
+.details-section h4 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.details-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.details-section li {
+  padding: 8px 0;
+  color: #333;
+  font-size: 14px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.details-section li:last-child {
+  border-bottom: none;
+}
+
+.details-section p {
+  margin: 5px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.status-update-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.status-update-form select,
+.status-update-form input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.update-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.update-btn:hover {
+  background-color: #45a049;
+}
+
+.cancel-btn {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.cancel-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.edit-btn {
+  background-color: #2196F3;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.edit-btn:hover {
+  background-color: #1976D2;
+}

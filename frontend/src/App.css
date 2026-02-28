@@ -1,0 +1,63 @@
+/* Global responsive rules */
+/* reduce side margins on smaller screens */
+@media (max-width: 1024px) {
+  body {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px;
+  }
+}
+
+/* medium screens */
+@media (max-width: 1024px) {
+  .collections {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .popular-item {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .item {
+    width: 250px;
+  }
+  .nav-menu {
+    gap: 20px;
+  }
+  .nav-logo p {
+    font-size: 32px;
+  }
+  .nav-login-cart {
+    gap: 20px;
+  }
+}
+
+/* small screens */
+@media (max-width: 768px) {
+  .collections {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .popular-item {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .item {
+    width: 100%;
+  }
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-login-cart {
+    margin-top: 10px;
+  }
+}
+
